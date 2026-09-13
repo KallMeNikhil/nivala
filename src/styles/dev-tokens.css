@@ -1,0 +1,136 @@
+.dev-tokens {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+.dev-tokens__block-title {
+  font-family: var(--font-body);
+  font-weight: var(--fw-label);
+  font-size: var(--fs-small);
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+  margin-bottom: var(--space-3);
+}
+
+.dev-swatches {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+}
+
+@media (min-width: 640px) {
+  .dev-swatches {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.dev-swatch {
+  border: var(--border-hairline);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.dev-swatch__fill {
+  height: 72px;
+}
+
+.dev-swatch__label {
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--fs-small);
+  line-height: 1.3;
+}
+
+.dev-type-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding-block: var(--space-2);
+  border-bottom: var(--border-hairline);
+}
+
+.dev-type-row:last-child {
+  border-bottom: none;
+}
+
+.dev-type-row__meta {
+  font-size: var(--fs-small);
+  color: rgba(36, 31, 28, 0.6);
+}
+
+.dev-space-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-block: var(--space-1);
+}
+
+.dev-space-row__bar {
+  background-color: var(--color-terracotta);
+  height: var(--space-1);
+}
+
+.dev-space-row__label {
+  font-size: var(--fs-small);
+  width: 96px;
+  flex-shrink: 0;
+}
+
+.dev-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2);
+}
+
+@media (min-width: 640px) {
+  .dev-detail-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.dev-detail-box {
+  background-color: var(--color-cream);
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+  font-size: var(--fs-small);
+}
+
+.dev-detail-box--radius-md {
+  border-radius: var(--radius-md);
+}
+
+.dev-detail-box--shadow {
+  box-shadow: var(--shadow-nav);
+}
+
+.dev-responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2);
+}
+
+@media (min-width: 640px) {
+  .dev-responsive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dev-responsive-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.dev-responsive-cell {
+  background-color: var(--color-charcoal);
+  color: var(--color-cream);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+  font-size: var(--fs-small);
+  text-align: center;
+}
